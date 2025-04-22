@@ -200,7 +200,7 @@ export default function App() {
                     disabled={paso === 1}
                     className={`px-4 py-2 rounded-md ${paso === 1
                       ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                      : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                      : 'bg-gray-100 hover:bg-gray-200 text-gray-700 cursor-pointer'
                       }`}
                   >
                     Atrás
@@ -210,7 +210,7 @@ export default function App() {
                     onClick={siguientePaso}
                     disabled={!puedeAvanzar()}
                     className={`px-4 py-2 rounded-md ${puedeAvanzar()
-                      ? 'bg-ferngreen hover:bg-green-700 text-white'
+                      ? 'bg-ferngreen hover:bg-green-700 text-white cursor-pointer'
                       : 'bg-ferngreen text-gray-400 cursor-not-allowed'
                       }`}
                   >

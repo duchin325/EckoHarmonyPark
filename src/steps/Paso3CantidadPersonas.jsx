@@ -11,7 +11,7 @@ const Paso3CantidadPersonas = ({
       <div className="flex items-center justify-center space-x-4">
         <button
           onClick={() => cantidadPersonas > 1 && setCantidadPersonas(cantidadPersonas - 1)}
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-800 font-bold text-xl"
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-800 font-bold text-xl cursor-pointer"
           disabled={cantidadPersonas <= 1}
         >
           -
@@ -19,7 +19,7 @@ const Paso3CantidadPersonas = ({
         <span className="text-2xl font-semibold">{cantidadPersonas}</span>
         <button
           onClick={() => cantidadPersonas < cuposDisponibles && setCantidadPersonas(cantidadPersonas + 1)}
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-800 font-bold text-xl"
+          className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-800 font-bold text-xl cursor-pointer"
           disabled={cantidadPersonas >= cuposDisponibles}
         >
           +

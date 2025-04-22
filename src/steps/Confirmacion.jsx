@@ -19,7 +19,7 @@ const Confirmacion = ({
         </p>
         <button
           onClick={reiniciarFormulario}
-          className="w-full bg-ferngreen hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+          className="w-full bg-ferngreen hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors cursor-pointer"
         >
           Realizar otra inscripción
         </button>
