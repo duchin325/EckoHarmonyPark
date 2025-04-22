@@ -55,7 +55,7 @@ export default function App() {
         return participantes.every(p =>
           p.nombre.trim() !== '' &&
           p.dni.trim().length >= 7 && p.dni.trim().length <= 8 &&
-          p.edad.trim() !== '' && p.edad.trim().length > 0 && p.edad.trim().length <= 2 &&
+          p.edad.trim() !== '' && Number(p.edad.trim()) > 0 && p.edad.trim().length <= 2 &&
           (!actividadSeleccionada?.requiereTalla || p.talla)
         );
       case 5: return aceptaTerminos;
