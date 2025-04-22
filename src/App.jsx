@@ -160,8 +160,8 @@ export default function App() {
                   onClick={() => setActividadSeleccionada(actividad)}
                   className={`p-4 rounded-lg cursor-pointer transition-all ${
                     actividadSeleccionada?.id === actividad.id 
-                      ? 'bg-green-100 border-2 border-green-500' 
-                      : 'bg-white border border-gray-200 hover:border-green-300'
+                      ? 'bg-mindaro border-2 border-mossgreen' 
+                      : 'bg-white border border-gray-200 hover:border-mossgreen'
                   }`}
                 >
                   <h3 className="font-medium">{actividad.nombre}</h3>
@@ -327,7 +327,7 @@ export default function App() {
   // Vista de inscripción exitosa
   if (inscripcionCompletada) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-lime-200 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -351,10 +351,10 @@ export default function App() {
 
   // Formulario principal
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-mossgreen flex flex-col">
       <header className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-6">
-          <h1 className="text-2xl font-bold text-green-800">Inscripción a Actividades</h1>
+          <h1 className="text-2xl font-bold text-huntergreen">Inscripción a Actividades</h1>
         </div>
       </header>
       
@@ -366,13 +366,13 @@ export default function App() {
               {[1, 2, 3, 4, 5].map((stepNum) => (
                 <div 
                   key={stepNum}
-                  className={`flex flex-col items-center ${stepNum < paso ? 'text-green-600' : stepNum === paso ? 'text-green-800' : 'text-gray-400'}`}
+                  className={`flex flex-col items-center ${stepNum < paso ? 'text-huntergreen' : stepNum === paso ? 'text-white' : 'text-gray-800'}`}
                 >
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                     stepNum < paso 
-                      ? 'bg-green-600 text-white' 
+                      ? 'bg-darkgreen text-white' 
                       : stepNum === paso 
-                        ? 'bg-green-100 text-green-800 border-2 border-green-600' 
+                        ? 'bg-ferngreen text-gray-800 border-2 border-huntergreen' 
                         : 'bg-gray-100 text-gray-500'
                   }`}>
                     {stepNum < paso ? (
@@ -424,8 +424,8 @@ export default function App() {
                 disabled={!puedeAvanzar()}
                 className={`px-4 py-2 rounded-md ${
                   puedeAvanzar()
-                    ? 'bg-green-600 hover:bg-green-700 text-white' 
-                    : 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                    ? 'bg-ferngreen hover:bg-green-700 text-white' 
+                    : 'bg-ferngreen text-gray-400 cursor-not-allowed'
                 }`}
               >
                 {paso === 5 ? 'Confirmar inscripción' : 'Siguiente'}

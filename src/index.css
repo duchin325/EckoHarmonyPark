@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-mindaro: #ECF39E;
+    --color-mossgreen: #90A955;
+    --color-ferngreen: #4F772D;
+    --color-huntergreen: #31572C;
+    --color-darkgreen: #132A13;
+  }
