@@ -187,8 +187,8 @@ export default function App() {
                     onClick={() => setHorarioSeleccionado(horario)}
                     className={`p-4 rounded-lg cursor-pointer transition-all ${
                       horarioSeleccionado?.id === horario.id 
-                        ? 'bg-green-100 border-2 border-green-500' 
-                        : 'bg-white border border-gray-200 hover:border-green-300'
+                        ? 'bg-mindaro border-2 border-mossgreen' 
+                        : 'bg-white border border-gray-200 hover:border-mossgreen'
                     }`}
                   >
                     <h3 className="font-medium">{horario.hora}</h3>
@@ -327,7 +327,7 @@ export default function App() {
   // Vista de inscripción exitosa
   if (inscripcionCompletada) {
     return (
-      <div className="min-h-screen bg-lime-200 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-mindaro flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -340,7 +340,7 @@ export default function App() {
           </p>
           <button
             onClick={reiniciarFormulario}
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+            className="w-full bg-ferngreen hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
           >
             Realizar otra inscripción
           </button>
